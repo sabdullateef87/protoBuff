@@ -3,20 +3,12 @@ package com.as.protobuf.messaging;
 import com.as.proto.Transaction;
 
 import com.as.proto.TransactionType;
-import com.as.protobuf.model.request.TransactionRequest;
-import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
-
-import java.time.Instant;
-import java.time.temporal.ChronoUnit;
-import java.time.temporal.TemporalField;
 import java.util.Random;
 import java.util.UUID;
-import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
-import com.as.protobuf.enums.*;
 @Component
 public class TransactionProducer {
   private static final String TOPIC = "transactions";

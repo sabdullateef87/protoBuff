@@ -1,8 +1,6 @@
 package com.as.protobuf.model.request;
 
 import com.as.protobuf.enums.TransactionType;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import lombok.Getter;
 import lombok.Setter;
 
